@@ -19,6 +19,21 @@ CREATE TABLE IF NOT EXISTS increments (
     increment_created_at TEXT    NULL
 );
 
+-- Create the sprints table
+CREATE TABLE IF NOT EXISTS sprints (
+    -- Unique identifier for the sprint
+    sprint_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    -- Sprint number (e.g., Sprint 1, Sprint 2)
+    sprint_number INTEGER NOT NULL,
+    -- Start date of the sprint
+    sprint_start_date DATE,                    
+    sprint_end_date DATE,                      -- End date of the sprint
+    sprint_duration INT,                       -- Duration of the sprint in days
+    sprint_start_dayOfWeek STRING,             -- Day of the week when the sprint starts
+    sprint_end_dayOfWeek STRING                -- Day of the week when the sprint ends
+);
+
+
 -- Create the sprints_model table
 CREATE TABLE IF NOT EXISTS sprints_model (
    -- sprint model id
