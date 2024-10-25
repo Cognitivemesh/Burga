@@ -1,0 +1,5 @@
+# SurrealML Models
+
+Once model is stored in SurrealDB, there are two methods to use it for making predictions:
+* Use a Python function to retrieve the model, deserialize it, and make predictions. 
+* Define SurrealQL custom function that retrieve, deserialize it and make predictions.
